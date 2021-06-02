@@ -1,0 +1,48 @@
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: box-move;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* can put background-color to change colour */
+@keyframes box-move{
+    0%{
+        left: 0;
+    }
+
+    100%{
+        left: 500px;
+    }
+}
+
+#hover-eg{
+    height: 200px;
+    width: 200px;
+    background-color: skyblue;
+    transition-property: background-color, height, width;
+    transition-duration: 5s;
+}
+
+/* this is pseudo class (:) */
+/* can be attached to id and class elements */
+#hover-eg:hover{
+    background-color: purple;
+    height: 400px;
+    width: 400px;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-color: yellowgreen;
+    }
+}
+
+@media screen and (min-width: 600px){
+    body{
+        background-color: orange;
+    }
+}
