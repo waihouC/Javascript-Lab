@@ -1,0 +1,104 @@
+body{
+    margin: 0px;
+}
+
+/* small screen styling */
+nav{
+    /* absolute to remove from doc flow and wont interfere background, 
+        stretch background to top */
+    position: absolute !important;
+    width: 100%;
+}
+
+input{
+    margin: 3px;
+}
+
+.navbar-brand>img{
+    height: 80px;
+}
+
+.nav-link{
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    font-family: cursive;
+    color: white !important;
+}
+
+/* Main section */
+main{
+    height: 100vh;
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=980:*);
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+
+    color:white;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 100px;
+}
+
+.overlay>div>h1{
+    font-size: 3rem;
+}
+
+/* Adoption section */
+.frame{
+    width: 300px;   /* mobile size */
+    height: 500px;
+    padding: 15px;
+    margin-top: 50px;
+    background-color: wheat;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.frame>div{
+    /* all div equal size */
+    flex: 1;
+    margin: 5px;
+}
+
+.frame img{
+    width: 100%;
+}
+
+/* Footer section */
+.footer-nav{
+    font-family: cursive;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: grey;
+    margin: 10px;
+}
+
+.footer-mid{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+div>span{
+    float: right;
+}
+
+/* screen bigger than ipad */
+@media screen and (min-width: 900px) {
+    nav{
+        top: 50px;
+    }
+    
+    /* space out links */
+    .nav-item{
+        margin: 20px;
+    }
+}
