@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- this is where the chart will be rendered into -->
+    <!-- each chart must have own div and unique id -->
+    <div id="container">
+        <div style="height:80vh" class="chart">
+            <div id="line-chart"></div>
+        </div>
+    
+        <div style="height:80vh" class="chart">
+            <div id="bar-chart"></div>
+        </div>
+
+        <div style="height:80vh" class="chart">
+            <div id="pie-chart"></div>
+        </div>
+    </div>
+
+    <div id="container2">
+        <div style="height:80vh" class="chart">
+            <div id="campaignChart"></div>
+        </div>
+ 
+        <div style="height:80vh" class="chart">
+             <div id="reachChart"></div>
+        </div>
+    </div>
+    
+    <div style="height:80vh">
+        <div id="extdata-chart"></div>
+    </div>
+    
+    <div id="container3">
+        <div style="height:80vh" class="chart">
+            <div id="handson-chart1"></div>
+        </div>
+        <div style="height:80vh" class="chart">
+            <div id="handson-chart2"></div>
+        </div>
+    </div>
+    
+    <div style="height:80vh">
+        <div id="csv-chart"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.rawgit.com/Keyang/node-csvtojson/d41f44aa/browser/csvtojson.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
