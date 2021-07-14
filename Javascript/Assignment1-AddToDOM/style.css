@@ -1,0 +1,8 @@
+.box {
+    border:2px black dashed;
+    min-height: 300px;
+}
+
+img {
+  height: 200px;
+}
